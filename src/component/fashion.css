@@ -1,0 +1,31 @@
+.f-pic{
+    width: 100%;
+}
+.f-logo{
+    width: 110px;
+    margin-bottom: 15px;
+}
+.f-first{
+    width: 48%;
+}
+.f-second{
+    width: 48%;
+}
+.f-con{
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width : 1000px){
+    .f-con{
+        flex-direction: column-reverse;
+        padding: 0 25px;
+    }
+    .f-first{
+        width: 99%;
+    }
+    .f-second{
+        width: 99%;
+        margin-bottom: 40px;
+    }
+    
+}

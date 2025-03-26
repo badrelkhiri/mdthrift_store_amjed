@@ -1,0 +1,127 @@
+.black{
+    color: black;
+}
+.discover{
+    color: black;
+    
+}
+.savemoney{
+    height: 330px;
+}
+.why-title{
+    color : black;
+    font-weight: bold;
+    font-size: 42px;
+}
+.why-btn , .sustainable a , .variety a , .affordable a , .purpose a{
+    border-radius: 0;
+    border: 1px solid black;
+    width: 100px;
+}
+.w-body , .purpose div{
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+.sustainable , .variety{
+    padding-left: 30px;
+    padding-top:30px ;
+}
+.sustainable{
+    margin-right: 10px;
+}
+.sustainable h4 {
+    color: black;
+}
+.variety h4{
+    width: 70%;
+}
+.variety p{
+    width: 70%;
+}
+.whyOurStroe , .sustainable, .variety , .purpose{
+    border-radius: 0;
+    border: 1px solid black;
+}
+.affordable{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.affordable .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 30px;
+}
+.aff-pic{
+    width: 50%;
+}
+.affordable .card-body h3{
+    width: 100%;
+    color: black;
+}
+
+.affordable .card-body p{
+    width: 80%;
+}
+
+.part-1 ,.part-2{
+    width: 49%;
+}
+.diffrent-con{
+    margin: 140px 0px;
+    width: 100%;
+}
+.s-logo{
+    margin-bottom: 1.5rem ;
+}
+
+@media (max-width : 1000px) {
+    .df-section{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .df-section .part-1 , .df-section .part-2{
+        width: 100%;
+    }
+
+    .df-section .part-1 {
+        margin-bottom: 10px;
+    }
+    .sustainable , .variety {
+        width: 50%;
+    }
+    .savemoney{
+        height: 470px;
+    }
+}
+@media (max-width : 700px){
+    .savemoney{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width : 600px){
+    .bottom-p{
+        flex-direction: column;
+    }
+    .variety , .sustainable {
+        width: 100%;
+    }
+    .sustainable{
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    .affordable{
+        flex-direction: column;
+    }
+    .affordable .card-body{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .aff-pic{
+        width: 100%;
+    }
+}

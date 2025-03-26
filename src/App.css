@@ -1,0 +1,170 @@
+/* Base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to sections */
+section {
+  animation: fadeIn 1s ease;
+}
+
+#home {
+  animation: slideInFromLeft 1.2s ease;
+}
+
+#items {
+  animation: slideInFromRight 1.2s ease;
+}
+
+#fashion {
+  animation: slideInFromLeft 1.2s ease;
+}
+
+#diffrent {
+  animation: slideInFromRight 1.2s ease;
+}
+
+#join {
+  animation: slideInFromBottom 1.2s ease;
+}
+
+/* Product page styles */
+.products-container {
+  padding: 2rem 0;
+  animation: fadeIn 1s ease;
+}
+
+.products-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: slideInFromBottom 1.2s ease;
+}
+
+.product-card {
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: scaleUp 0.8s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-img {
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.product-img:hover {
+  transform: scale(1.05);
+}
+
+.filters {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  animation: slideInFromTop 0.8s ease;
+}
+
+.pagination {
+  margin-top: 2rem;
+  justify-content: center;
+  animation: fadeIn 1.5s ease;
+}
+
+/* Category badges */
+.category-badge {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.category-badge:hover {
+  transform: scale(1.1);
+}
+
+/* Loading animation */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #007bff;
+  animation: spin 1s ease-in-out infinite;
+}

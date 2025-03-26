@@ -1,0 +1,99 @@
+.con-nv{
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 90;
+}
+.login{
+    width: 100px;
+}
+.nv-b{
+    border-radius: 0;
+    padding: 0;
+}
+.nv-b:hover{
+    border-bottom: 2px solid black;
+    transition: 0.3s;
+}
+.nav-links{
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 1s;
+}
+/**
+  Hamburger
+**/
+.hamburger{
+  display: none;
+}
+@media (max-width : 1000px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top :11px;
+    right: 5%;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+  }
+  .hamburger div {
+    position: relative;
+    width: 3em;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #000;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+/**  
+nav 
+**/
+.nav-links{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  top: 70px;
+  background-color: white;
+  width: 100% !important;
+}
+.nav-links a{
+  margin-bottom:20px ;
+}
+.login{
+  width: 90% ;
+}
+  /**
+  Animations
+  **/
+  .hamburger-open .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+  }
+  .hamburger-open .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  .hamburger-open .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+  }
+  
+}
+.dn a , .dn button{
+  opacity: 0;
+  transition: 0.2s;
+}
+.dn{
+  opacity: 0;
+  height: 0;
+}
+
+@media (max-width : 700px){
+  .con-nv{
+    text-align: center;
+  }
+}

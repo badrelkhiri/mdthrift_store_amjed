@@ -1,0 +1,49 @@
+.btn-black {
+    background-color: black;
+    color: white;
+    border: none;
+  }
+.i-title{
+    color: black;
+    font-size: 43px;
+}
+.btn-black:hover {
+    background-color: #333;
+    color: #fff;
+}
+.items-container{
+    justify-content: space-between;
+}
+.i-con{
+    margin-bottom: 110px ;
+    text-align: center ;
+}
+.i-mbtn{
+    font-size: 22px;
+    margin-top: 50px;
+    color: black;
+    font-weight: bold;
+}
+.i-mbtn:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.itm {
+    border: 1px solid black;
+    border-radius:0px ;
+    width: 30%;
+    padding: 0;
+    margin: auto;
+}
+.itm-pic{
+    width: 100%;
+}
+@media (max-width : 700px){
+    .items-container{
+        flex-direction: column;
+    }
+    .itm{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
